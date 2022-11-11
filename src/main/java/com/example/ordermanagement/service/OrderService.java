@@ -1,6 +1,7 @@
 package com.example.ordermanagement.service;
 
 import com.example.ordermanagement.entity.OrderEntity;
+import com.example.ordermanagement.mapper.OrderMapper;
 import com.example.ordermanagement.model.Order;
 import com.example.ordermanagement.repository.OrderRepository;
 import lombok.RequiredArgsConstructor;
@@ -16,11 +17,7 @@ public class OrderService {
     private final OrderRepository orderRepository;
 
     public OrderEntity saveOrder(Order order) {
-
-        OrderEntity orderEntity = OrderEntity.builder()
-                .orderName(order.getOrderName())
-                .build();
-        return orderRepository.save(orderEntity);
+        return orderRepository.save(OrderMapper.INSTANCE.toEntity(order));
     }
 
     public List<OrderEntity> getAllOrder() {
