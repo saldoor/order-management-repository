@@ -20,7 +20,7 @@ public class OrderService {
         return orderRepository.save(OrderMapper.INSTANCE.toEntity(order));
     }
 
-    public List<OrderEntity> getAllOrder() {
-        return orderRepository.findAll();
+    public List<Order> getAllOrder() {
+        return OrderMapper.INSTANCE.toModelList(orderRepository.findAll());
     }
 }

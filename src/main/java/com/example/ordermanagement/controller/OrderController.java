@@ -8,7 +8,6 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RequestMapping("/order")
-
 @RestController
 public class OrderController {
 
@@ -25,7 +24,7 @@ public class OrderController {
     }
 
     @GetMapping("/getAllOrder")
-    public List<OrderEntity> getAllOrder() {
+    public List<Order> getAllOrder() {
         return orderService.getAllOrder();
     }
 }
