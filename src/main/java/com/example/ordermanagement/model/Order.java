@@ -6,6 +6,9 @@ import java.util.UUID;
 
 
 public class Order {
+
+    private UUID orderId;
+    private String orderName;
     public UUID getOrderId() {
         return orderId;
     }
@@ -21,8 +24,4 @@ public class Order {
     public void setOrderName(String orderName) {
         this.orderName = orderName;
     }
-
-    private UUID orderId;
-    private String orderName;
-
 }
