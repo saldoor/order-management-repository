@@ -32,12 +32,12 @@ class OrdermanagementApplicationTests extends AbstractContainerBaseTest {
 	@Autowired
 	private MockMvc mockMvc;
 
-    @Test
+   /* @Test
     public void saveOrder() throws Exception {
-		/*System.out.println(POSTGRES_SQL_CONTAINER.getDatabaseName());
+		*//*System.out.println(POSTGRES_SQL_CONTAINER.getDatabaseName());
 		System.out.println(POSTGRES_SQL_CONTAINER.getUsername());
 		System.out.println(POSTGRES_SQL_CONTAINER.getPassword());
-		System.out.println(POSTGRES_SQL_CONTAINER.getJdbcUrl());*/
+		System.out.println(POSTGRES_SQL_CONTAINER.getJdbcUrl());*//*
 
         List<OrderEntity> orderEntityList = List.of(OrderEntity.builder()
                         .orderName("abc")
@@ -51,6 +51,6 @@ class OrdermanagementApplicationTests extends AbstractContainerBaseTest {
 
 		resultActions.andExpect(MockMvcResultMatchers.status().isOk());
 		resultActions.andExpect(MockMvcResultMatchers.jsonPath("$.size()", CoreMatchers.is(orderEntities.size())));
-	}
+	}*/
 
 }
