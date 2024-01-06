@@ -19,7 +19,6 @@ public class OrderService {
     }
 
     public OrderEntity saveOrder(Order order) {
-        System.out.println("Order before convert "+order);
         return orderRepository.save(OrderMapper.INSTANCE.toEntity(order));
     }
 

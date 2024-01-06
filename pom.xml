@@ -11,10 +11,10 @@
     <groupId>com.example</groupId>
     <artifactId>ordermanagement</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>ordermanagement</name>
+    <name>order management</name>
     <description>spring boot for order management</description>
     <properties>
-        <java.version>11</java.version>
+        <java.version>17</java.version>
         <org.mapstruct.version>1.5.2.Final</org.mapstruct.version>
     </properties>
     <dependencies>
